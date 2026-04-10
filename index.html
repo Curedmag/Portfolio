@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emma Vowles | Multimedia Journalist</title>
+
   <style>
     body {
-      font-family: Georgia, 'Times New Roman', serif;
+      font-family: Georgia, "Times New Roman", serif;
       margin: 0;
-      background: #ffffff;
+      background: #fff;
       color: #111;
       line-height: 1.7;
     }
@@ -29,191 +30,215 @@
       max-width: 800px;
       margin: 15px auto 0;
       color: #444;
-      font-size: 1.05rem;
-    }
-
-    nav {
-      text-align: center;
-      padding: 15px;
-      border-bottom: 1px solid #eee;
-    }
-
-    nav a {
-      margin: 0 12px;
-      text-decoration: none;
-      color: #222;
-      font-weight: 600;
     }
 
     section {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
-      padding: 50px 20px;
+      padding: 40px 20px;
     }
 
     h2 {
-      font-size: 1.6rem;
-      margin-bottom: 25px;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
     }
 
     .card {
       border: 1px solid #eee;
-      border-radius: 10px;
       padding: 18px;
+      border-radius: 10px;
+      transition: 0.2s;
       background: #fff;
-      transition: 0.2s ease;
     }
 
     .card:hover {
-      transform: translateY(-3px);
+      transform: translateY(-2px);
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     }
 
     .tag {
       font-size: 0.75rem;
+      color: #555;
       border: 1px solid #ddd;
-      display: inline-block;
       padding: 3px 8px;
       border-radius: 20px;
+      display: inline-block;
       margin-bottom: 10px;
-      color: #555;
     }
 
-    .card h3 {
-      margin: 10px 0 8px;
+    h3 {
+      margin: 8px 0;
       font-size: 1.1rem;
     }
 
-    .card p {
+    p {
       font-size: 0.95rem;
       color: #444;
     }
 
-    .card a {
+    a {
       display: inline-block;
-      margin-top: 12px;
+      margin-top: 10px;
       color: #000;
-      text-decoration: underline;
       font-weight: 600;
+      text-decoration: underline;
     }
 
     footer {
       text-align: center;
       padding: 40px;
-      color: #777;
       border-top: 1px solid #eee;
-      margin-top: 40px;
+      color: #666;
     }
 
-    .intro {
-      max-width: 800px;
-      margin: auto;
+    .contact {
       text-align: center;
-      color: #333;
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Emma Vowles</h1>
-  <p class="intro">
-    Multimedia journalist and producer working across food, culture, environment, and coastal communities in the UK.
-  </p>
+  <p>Multimedia journalist and producer working across food, culture, environment, and coastal communities in the UK.</p>
 </header>
 
-<nav>
-  <a href="#featured">Featured</a>
-  <a href="#stories">Stories</a>
-  <a href="#audio">Audio</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="featured">
-  <h2>Featured Stories</h2>
+<!-- FEATURED -->
+<section>
+  <h2>Featured Published Work</h2>
 
   <div class="grid">
+
+    <div class="card">
+      <span class="tag">Media</span>
+      <h3>BBC’s Ros Atkins Interview</h3>
+      <p>Published feature interview for Press Gazette on storytelling, AI and journalism.</p>
+      <a href="https://pressgazette.co.uk/news-leaders/ros-atkins-interview-2/" target="_blank">
+        Read published article →
+      </a>
+    </div>
 
     <div class="card">
       <span class="tag">Food & Economy</span>
       <h3>Plymouth Food Trends 2026</h3>
-      <p>How collaboration, sustainability and survival are shaping the city’s restaurant scene.</p>
-      <a href="/plymouth-food-trends.html">Read story →</a>
-    
-   <div class="card">
-  <span class="tag">Media / Journalism</span>
-  <h3>Ros Atkins Interview</h3>
-  <p>BBC News analysis editor on storytelling, AI, and modern journalism.</p>
-  <a href="ros-atkins-interview.html">Read story →</a>
-</div>
+      <p>Analysis of collaboration, creativity and survival in the restaurant sector.</p>
+      <a href="https://www.plymouthvoice.co.uk/articles/predicting-plymouths-restaurant-business-scene-and-food-trends-in-2026-collaboration-creativity-and-survival/" target="_blank">
+        Read article →
+      </a>
+    </div>
+
+    <div class="card">
+      <span class="tag">Environment</span>
+      <h3>Food Waste Recycling in Plymouth</h3>
+      <p>Explainer on new recycling systems and public questions answered.</p>
+      <a href="https://www.plymouthvoice.co.uk/articles/new-food-waste-recycling-service-rolls-out-across-plymouth-your-questions-answered/" target="_blank">
+        Read article →
+      </a>
+    </div>
 
   </div>
 </section>
 
-<section id="stories">
-  <h2>More Work</h2>
+<!-- LONGFORM / INVESTIGATIONS -->
+<section>
+  <h2>Investigations & Features</h2>
 
   <div class="grid">
 
     <div class="card">
-      <span class="tag">Investigative</span>
-      <h3>Forgotten Fish: Cornwall’s seafood identity</h3>
-      <p>How naming shapes perception of sustainable seafood in the UK fishing industry.</p>
-      <a href="#">External link →</a>
+      <span class="tag">Food Journalism</span>
+      <h3>Forgotten Fish</h3>
+      <p>Renaming Cornwall’s sustainable seafood and shaping consumer perception.</p>
+      <a href="https://journal.falmouth.ac.uk/thedrop/2023/11/17/forgotten-fish-renaming-cornwalls-sustainable-seafood/" target="_blank">
+        Read →
+      </a>
     </div>
 
     <div class="card">
-      <span class="tag">Digital Trends</span>
+      <span class="tag">Culture</span>
       <h3>Tinned Fish TikTok Trend</h3>
-      <p>How viral food culture is influencing seafood consumption and marketing.</p>
-      <a href="#">External link →</a>
+      <p>How viral food culture is reshaping seafood demand.</p>
+      <a href="https://theladderredruth.com/" target="_blank">
+        Read →
+      </a>
+    </div>
+
+    <div class="card">
+      <span class="tag">Culture</span>
+      <h3>Redruth Pride & Local Reporting</h3>
+      <p>Community journalism and regional storytelling work.</p>
+      <a href="https://theladderredruth.com/redruth-pride" target="_blank">
+        Read →
+      </a>
     </div>
 
   </div>
 </section>
 
-<section id="audio">
-  <h2>Audio & Multimedia</h2>
+<!-- AUDIO -->
+<section>
+  <h2>Audio & Broadcast</h2>
 
   <div class="grid">
 
     <div class="card">
       <span class="tag">Documentary</span>
       <h3>Seaweed Sizzles</h3>
-      <p>Sustainable seaweed farming in Cornwall and its culinary rise.</p>
-      <a href="https://soundcloud.com/emma-vowles/seaweed-sizzles-western-palates-embrace-a-new-culinary-wave">Listen →</a>
+      <p>Sustainable seaweed farming and culinary innovation in Cornwall.</p>
+      <a href="https://soundcloud.com/emma-vowles/seaweed-sizzles-western-palates-embrace-a-new-culinary-wave" target="_blank">
+        Listen →
+      </a>
+    </div>
+
+    <div class="card">
+      <span class="tag">Documentary</span>
+      <h3>Unpicked – Crab Industry</h3>
+      <p>Women in crab processing and unseen labour in Cornwall’s fishing industry.</p>
+      <a href="https://soundcloud.com/emma-vowles/unpicked-full-documentary-by-1" target="_blank">
+        Listen →
+      </a>
     </div>
 
     <div class="card">
       <span class="tag">Radio</span>
-      <h3>Unpicked – Crab Industry</h3>
-      <p>Women in crab processing and unseen labour in Cornwall’s fishing industry.</p>
-      <a href="https://soundcloud.com/emma-vowles/unpicked-full-documentary-by-1">Listen →</a>
+      <h3>Live Broadcast Work</h3>
+      <p>Source FM and Journalism UK live reporting and interviews.</p>
+      <a href="https://soundcloud.com/" target="_blank">
+        Listen →
+      </a>
     </div>
 
   </div>
 </section>
 
-<section id="contact">
+<!-- CONTACT -->
+<section class="contact">
   <h2>Contact</h2>
-  <p>
-    Email: <a href="mailto:emmavowlesfalmouth@gmail.com">emmavowlesfalmouth@gmail.com</a>
-  </p>
+  <p>Email: <a href="mailto:emmavowlesfalmouth@gmail.com">emmavowlesfalmouth@gmail.com</a></p>
 </section>
 
 <footer>
-  <p>© 2026 Emma Vowles — Multimedia Journalist</p>
+  © 2026 Emma Vowles — Multimedia Journalist
 </footer>
 
 </body>
 </html>
 
+  
+   
+
+   
+     
+    
   
 
 
