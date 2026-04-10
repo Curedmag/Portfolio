@@ -15,24 +15,21 @@
     }
 
     header {
-      padding: 80px 20px 40px;
+      padding: 70px 20px 30px;
       text-align: center;
       border-bottom: 1px solid #eee;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.8rem;
-      letter-spacing: -0.5px;
+      font-size: 2.7rem;
     }
 
     header p {
-      margin-top: 15px;
+      max-width: 800px;
+      margin: 15px auto 0;
       color: #444;
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+      font-size: 1.05rem;
     }
 
     nav {
@@ -44,13 +41,12 @@
     nav a {
       margin: 0 12px;
       text-decoration: none;
-      color: #333;
+      color: #222;
       font-weight: 600;
-      font-size: 0.95rem;
     }
 
     section {
-      max-width: 850px;
+      max-width: 1100px;
       margin: auto;
       padding: 50px 20px;
     }
@@ -60,49 +56,66 @@
       margin-bottom: 25px;
     }
 
-    .intro {
-      font-size: 1.05rem;
-      color: #222;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
     }
 
-    .article {
-      margin-bottom: 28px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #f0f0f0;
+    .card {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 18px;
+      background: #fff;
+      transition: 0.2s ease;
     }
 
-    .article h3 {
-      margin: 0 0 6px;
-      font-size: 1.15rem;
-    }
-
-    .article p {
-      margin: 5px 0;
-      color: #444;
-    }
-
-    .article a {
-      color: #000;
-      text-decoration: underline;
-      font-size: 0.95rem;
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     }
 
     .tag {
-      display: inline-block;
       font-size: 0.75rem;
-      padding: 2px 8px;
       border: 1px solid #ddd;
-      border-radius: 12px;
-      margin-bottom: 8px;
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 20px;
+      margin-bottom: 10px;
       color: #555;
+    }
+
+    .card h3 {
+      margin: 10px 0 8px;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 12px;
+      color: #000;
+      text-decoration: underline;
+      font-weight: 600;
     }
 
     footer {
       text-align: center;
       padding: 40px;
-      font-size: 0.9rem;
       color: #777;
       border-top: 1px solid #eee;
+      margin-top: 40px;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: #333;
     }
   </style>
 </head>
@@ -110,104 +123,89 @@
 
 <header>
   <h1>Emma Vowles</h1>
-  <p>Multimedia journalist and producer working across food, culture, environment, and coastal communities in the UK.</p>
+  <p class="intro">
+    Multimedia journalist and producer working across food, culture, environment, and coastal communities in the UK.
+  </p>
 </header>
 
 <nav>
-  <a href="#recent">Recent Work</a>
-  <a href="#features">Features</a>
+  <a href="#featured">Featured</a>
+  <a href="#stories">Stories</a>
   <a href="#audio">Audio</a>
-  <a href="#current">Current Work</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<section id="recent">
-  <h2>Recent Freelance Journalism</h2>
+<section id="featured">
+  <h2>Featured Stories</h2>
 
-  <div class="article">
-    <span class="tag">Food & Hospitality</span>
-    <h3>Plymouth’s restaurant scene and food trends in 2026</h3>
-    <p>Analysis of collaboration, creativity and survival in Plymouth’s evolving hospitality industry.</p>
-    <a href="https://www.plymouthvoice.co.uk/articles/predicting-plymouths-restaurant-business-scene-and-food-trends-in-2026-collaboration-creativity-and-survival/">Read article →</a>
-  </div>
+  <div class="grid">
 
-  <div class="article">
-    <span class="tag">Environment / Civic Reporting</span>
-    <h3>Plymouth food waste recycling rollout explained</h3>
-    <p>A clear Q&A explainer on the city’s new food waste collection service and what it means for residents.</p>
-    <a href="https://www.plymouthvoice.co.uk/articles/new-food-waste-recycling-service-rolls-out-across-plymouth-your-questions-answered/">Read article →</a>
-  </div>
+    <div class="card">
+      <span class="tag">Food & Economy</span>
+      <h3>Plymouth Food Trends 2026</h3>
+      <p>How collaboration, sustainability and survival are shaping the city’s restaurant scene.</p>
+      <a href="/plymouth-food-trends.html">Read story →</a>
+    </div>
 
-  <div class="article">
-    <span class="tag">Newsroom Experience</span>
-    <h3>Live blogging – Journalism UK</h3>
-    <p>Freelance live blogger producing real-time updates in a fast-paced newsroom environment.</p>
-    <a href="#">Example work →</a>
+    <div class="card">
+      <span class="tag">Media / Journalism</span>
+      <h3>Ros Atkins Interview</h3>
+      <p>BBC News analysis editor on storytelling, AI, and modern journalism.</p>
+      <a href="/ros-atkins-interview.html">Read story →</a>
+    </div>
+
   </div>
 </section>
 
-<section id="features">
-  <h2>Features & Investigations</h2>
+<section id="stories">
+  <h2>More Work</h2>
 
-  <div class="article">
-    <h3>BBC News / Ros Atkins interview (Press Gazette)</h3>
-    <p>Interview and analysis exploring storytelling, data journalism, and OSINT in modern newsrooms.</p>
-    <a href="https://pressgazette.co.uk/news-leaders/ros-atkins-interview-2/">Read article →</a>
-  </div>
+  <div class="grid">
 
-  <div class="article">
-    <h3>Forgotten Fish: Cornwall’s sustainable seafood identity</h3>
-    <p>Exploring how naming and perception shape the UK seafood industry post-Brexit.</p>
-    <a href="https://journal.falmouth.ac.uk/thedrop/2023/11/17/forgotten-fish-renaming-cornwalls-sustainable-seafood/">Read article →</a>
-  </div>
+    <div class="card">
+      <span class="tag">Investigative</span>
+      <h3>Forgotten Fish: Cornwall’s seafood identity</h3>
+      <p>How naming shapes perception of sustainable seafood in the UK fishing industry.</p>
+      <a href="#">External link →</a>
+    </div>
 
-  <div class="article">
-    <h3>Tinned fish trend and viral food culture</h3>
-    <p>Analysis of TikTok food trends and their impact on seafood consumption and marketing.</p>
-    <a href="https://themouth.co.uk/2024/10/25/will-the-ban-on-disposable-vapes-stop-children-using-them/">Read article →</a>
+    <div class="card">
+      <span class="tag">Digital Trends</span>
+      <h3>Tinned Fish TikTok Trend</h3>
+      <p>How viral food culture is influencing seafood consumption and marketing.</p>
+      <a href="#">External link →</a>
+    </div>
+
   </div>
 </section>
 
 <section id="audio">
   <h2>Audio & Multimedia</h2>
 
-  <div class="article">
-    <h3>Seaweed Sizzles – Audio Documentary</h3>
-    <p>Exploring seaweed farming in Cornwall and its role in sustainable food systems.</p>
-    <a href="https://soundcloud.com/emma-vowles/seaweed-sizzles-western-palates-embrace-a-new-culinary-wave">Listen →</a>
-  </div>
+  <div class="grid">
 
-  <div class="article">
-    <h3>Unpicked – Crab industry documentary</h3>
-    <p>Documentary on women working in crab processing and unseen labour in the fishing industry.</p>
-    <a href="https://soundcloud.com/emma-vowles/unpicked-full-documentary-by-1">Listen →</a>
-  </div>
+    <div class="card">
+      <span class="tag">Documentary</span>
+      <h3>Seaweed Sizzles</h3>
+      <p>Sustainable seaweed farming in Cornwall and its culinary rise.</p>
+      <a href="https://soundcloud.com/emma-vowles/seaweed-sizzles-western-palates-embrace-a-new-culinary-wave">Listen →</a>
+    </div>
 
-  <div class="article">
-    <h3>EDI Culture Podcast – Falmouth University</h3>
-    <p>Podcast exploring equity, diversity and inclusion in arts leadership and governance.</p>
-    <a href="https://soundcloud.com/lup-910497190/change-culture-in-the-culture-sector">Listen →</a>
-  </div>
-</section>
+    <div class="card">
+      <span class="tag">Radio</span>
+      <h3>Unpicked – Crab Industry</h3>
+      <p>Women in crab processing and unseen labour in Cornwall’s fishing industry.</p>
+      <a href="https://soundcloud.com/emma-vowles/unpicked-full-documentary-by-1">Listen →</a>
+    </div>
 
-<section id="current">
-  <h2>Current Work</h2>
-
-  <div class="article">
-    <h3>Production Manager – awen Film Productions</h3>
-    <p>Supporting production workflows and coordinating visual storytelling projects in a film production environment.</p>
-  </div>
-
-  <div class="article">
-    <h3>Marketing – Arts Festival</h3>
-    <p>Working on audience engagement, digital content creation and promotion for cultural programming.</p>
   </div>
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>Email: emmavowlesfalmouth@gmail.com</p>
-  <p>Available for freelance journalism, audio, and multimedia commissions.</p>
+  <p>
+    Email: <a href="mailto:emmavowlesfalmouth@gmail.com">emmavowlesfalmouth@gmail.com</a>
+  </p>
 </section>
 
 <footer>
@@ -216,3 +214,10 @@
 
 </body>
 </html>
+
+  
+
+
+ 
+
+ 
