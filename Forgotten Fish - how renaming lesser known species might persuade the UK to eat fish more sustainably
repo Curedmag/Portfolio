@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Story Title | Emma Vowles</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      margin: 0;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .meta {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .image {
+      width: 100%;
+      margin: 25px 0;
+      border-radius: 6px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 18px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: #000;
+      border: 1px solid #000;
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+
+    .back:hover {
+      background: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Story Title | Emma Vowles</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      margin: 0;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .meta {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .image {
+      width: 100%;
+      margin: 25px 0;
+      border-radius: 6px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 18px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: #000;
+      border: 1px solid #000;
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+
+    .back:hover {
+      background: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Story Title Goes Here</h1>
+      <div class="meta">
+        By Emma Vowles | Publication / Date
+      </div>
+    </header>
+
+    <img class="image" src="YOUR-IMAGE-URL.jpg" alt="Story image" />
+
+    <p>
+      Your opening paragraph goes here. This should hook the reader and set the scene.
+    </p>
+
+    <p>
+      Your main story content goes here. Write in clear, journalistic paragraphs.
+    </p>
+
+    <p>
+      Add quotes, detail, and context. Keep paragraphs tight and readable.
+    </p>
+
+    <p>
+      Final paragraph should wrap up the story with insight or conclusion.
+    </p>
+
+    <a class="back" href="index.html">← Back to portfolio</a>
+
+  </div>
+
+</body>
+</html>
+</h1>
+      <div class="meta">
+        By Emma Vowles | Publication / Date
+      </div>
+    </header>
+
+    <img class="image" src="YOUR-IMAGE-URL.jpg" alt="Story image" />
+
+    <p>
+      Your opening paragraph goes here. This should hook the reader and set the scene.
+    </p>
+
+    <p>
+      Your main story content goes here. Write in clear, journalistic paragraphs.
+    </p>
+
+    <p>
+      Add quotes, detail, and context. Keep paragraphs tight and readable.
+    </p>
+
+    <p>
+      Final paragraph should wrap up the story with insight or conclusion.
+    </p>
+
+    <a class="back" href="index.html">← Back to portfolio</a>
+
+  </div>
+
+</body>
+</html>
